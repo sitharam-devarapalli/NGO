@@ -4,21 +4,20 @@
   z-index: 999;
   width: 100%;
 }
-.hotel-header-section{
-    padding: 20px 50px !important;
+
+.hotel-header-section {
+  padding: 20px 50px !important;
 }
 
 /* ===== Navbar Styles ===== */
 .hotel-header-navbar {
-  background-color: transparent;
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease, padding 0.3s ease;
-  padding: 16px 0;
+  padding: 0;
 }
-
-.hotel-header-navbar.scrolled {
-  background-color: rgba(17, 17, 17, 0.95);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  padding: 0px 0;
+.hotel-slider {
+  margin-top: 100px; /* or use padding-top */
 }
 
 /* ===== Logo Styles ===== */
@@ -29,13 +28,12 @@
 
 /* ===== Nav Links ===== */
 .hotel-header-nav .nav-link {
-  color: #fff;
+  color: #333;
   margin: 0 14px;
   font-weight: 500;
   position: relative;
   transition: color 0.3s;
 }
-
 
 .hotel-header-nav .nav-link:hover {
   color: #F96A18;
@@ -45,7 +43,7 @@
   width: 100%;
 }
 
-/* ===== Book Now Button ===== */
+/* ===== Donate Button ===== */
 .hotel-header-book-btn {
   background-color: #F96A18;
   color: #fff;
@@ -69,9 +67,10 @@
   transform: translateY(-2px);
 }
 
-/* ===== Mobile Toggle Button ===== */
+/* ===== Toggle Button Styles ===== */
 .hotel-header-toggler {
-  border-color: #fff;
+  border-color: #333;
+  background-color: transparent;
 }
 
 .hotel-header-toggler:focus {
@@ -80,20 +79,8 @@
 
 /* ===== Responsive Styles ===== */
 @media (max-width: 991px) {
-  .hotel-header-top-left,
-  .hotel-header-top-right {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-.hotel-header-section{
-  padding: 20px;
-}
-  .hotel-header-top span {
-    margin-bottom: 6px;
-  }
-
-  .hotel-header-navbar {
-    padding: 0px 0;
+  .hotel-header-section {
+    padding: 20px;
   }
 
   .hotel-header-book-btn {

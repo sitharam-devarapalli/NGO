@@ -28,6 +28,8 @@ import iconEducation from '../../assets/our-program-2.png';
 import iconEmpowerment from '../../assets/our-program-3.png';
 import iconImpact from '../../assets/our-program-4.png';
 
+import testimonial1 from "../../assets/testimonial-image.png"; // Replace with your actual image path
+
 
 const slides = [
     {
@@ -81,6 +83,23 @@ const countItems = [
     { number: 15, label: 'Sponsors' },
 ];
 
+const testimonials = [
+    {
+        name: "Kiran",
+        text: "Key Relief Foundation has transformed countless lives through education and empowerment. Proud to support their mission.",
+        image: testimonial1,
+    },
+    {
+        name: "Aisha",
+        text: "Volunteering here gave me purpose. They truly uplift the underprivileged with care and commitment.",
+        image: testimonial1,
+    },
+    {
+        name: "Ravi",
+        text: "The foundation’s impact on child development is commendable. A trusted NGO doing real work and good experience",
+        image: testimonial1,
+    },
+];
 
 const HomePage = () => {
     const [index, setIndex] = useState(0);
@@ -263,6 +282,28 @@ const HomePage = () => {
                 </Container>
             </section>
 
+
+            {/* testimonial section  */}
+            <section className="home-reviews mt-5">
+                <Container fluid className="text-center">
+                    <h2 className="review-heading">TESTIMONIALS</h2>
+                    <div className="section-dividerers mb-4"></div>
+                    <Carousel indicators={false} controls={true} interval={5000}>
+                        {testimonials.map((item, index) => (
+                            <Carousel.Item key={index}>
+                                <img
+                                    src={item.image}
+                                    alt={item.name}
+                                    className="testimonial-img mb-3"
+                                />
+                                <p className="testimonial-text">{item.text}</p>
+                                <hr className="testimonial-line" />
+                                <h6 className="testimonial-name">{item.name}</h6>
+                            </Carousel.Item>
+                        ))}
+                    </Carousel>
+                </Container>
+            </section>
         </section>
     );
 };

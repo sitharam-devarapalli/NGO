@@ -11,6 +11,8 @@ import {
 } from "react-icons/fa";
 import "./Footer.css";
 import { FaWhatsapp } from "react-icons/fa6";
+import logo from '../../assets/ngo-footer.png';
+
 
 const Footer = () => {
     return (
@@ -21,7 +23,9 @@ const Footer = () => {
                         {/* About */}
                         <Col md={3} sm={6} className="mb-4">
                             <h5 className="footer-title">About Us</h5>
-                            <div className="footer-logo mb-3">Logo</div>
+                            <div className="footer-logo mb-3">
+                                <img src={logo} alt="Digisphere Logo" style={{ width: "120px", height: "auto" }} />
+                            </div>
                             <p className="footer-text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text
