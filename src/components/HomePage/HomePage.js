@@ -246,7 +246,7 @@ const HomePage = () => {
 
             {/* our program code  */}
             <div className="home-our-programs text-center">
-                <h3 className="section-heading">OUR PROGRAMS</h3>
+                <h3 className="section-heading">OUR PROGRAMS</h3> 
                 <div className="section-dividerers mb-4"></div>
                 <Container fluid>
                     <Row>

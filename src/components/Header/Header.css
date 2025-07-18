@@ -1,4 +1,8 @@
 /* ===== Hotel Header Global Styles ===== */
+body {
+  padding-top: 90px; 
+}
+
 .hotel-header {
   position: relative;
   z-index: 999;
@@ -11,7 +15,7 @@
 
 /* ===== Navbar Styles ===== */
 .hotel-header-navbar {
-  background-color: #ffffff !important;
+  background-color: #ffffff !important; 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease, padding 0.3s ease;
   padding: 0;

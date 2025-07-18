@@ -584,9 +584,9 @@
     /* Space for the label above */
 }
 
-.count-label {
+.count-label { 
     position: absolute;
-    top: 65px;
+    top: 75px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
@@ -596,7 +596,7 @@
 }
 
 .count-number {
-    font-size: 64px;
+    font-size: 80px;
     font-weight: bold;
     color: transparent;
     -webkit-text-stroke: 2px #f57c00;

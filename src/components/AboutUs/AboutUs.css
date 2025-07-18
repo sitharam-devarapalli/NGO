@@ -1,0 +1,280 @@
+/* ======= Default Desktop Styles ======= */
+.about-banner h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.about-ourstory {
+    padding: 50px;
+}
+
+.about-ourstory .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.story-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.about-story-img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+}
+
+/* ======= Tablet View (768px – 991px) ======= */
+@media screen and (max-width: 991px) {
+    .about-banner h1 {
+        font-size: 38px;
+    }
+
+    .about-ourstory {
+        padding: 40px 20px;
+    }
+
+    .about-ourstory .section-title {
+        font-size: 28px;
+    }
+
+    .story-description {
+        font-size: 15px;
+    }
+}
+
+/* ======= Mobile View (max-width: 576px) ======= */
+@media screen and (max-width: 576px) {
+    .about-banner h1 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    .about-ourstory {
+        padding: 30px 15px;
+    }
+
+    .about-ourstory .section-title {
+        font-size: 24px;
+    }
+
+    .story-description {
+        font-size: 14px;
+    }
+
+    .about-story-img {
+        margin-top: 20px;
+    }
+}
+
+/* what we do section css  */
+/* WHAT WE DO section styles */
+.about-what-we {
+    background-color: #fff;
+    padding: 20px 50px;
+}
+
+.about-what-we .section-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.what-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.what-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.what-image {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .about-what-we {
+        padding: 20px 20px;
+    }
+
+    .about-what-we .section-title {
+        font-size: 26px;
+    }
+
+    .what-subtitle {
+        font-size: 18px;
+    }
+
+    .what-description {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .what-image {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+/* our teams section  */
+/* ========== ABOUT TEAM - GLOBAL STYLES ========== */
+.about-team {
+  background-color: #f26522;
+  padding: 30px 50px;
+}
+
+.about-team .section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+}
+
+/* ========== DONOR CARD STYLES ========== */
+.donor-card {
+  background-color: transparent;
+  border: 3px solid white;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.donor-card:hover {
+  transform: scale(1.05);
+}
+
+.donor-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.donor-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* ========== TABLET VIEW ========== */
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .about-team {
+    padding: 25px 30px;
+  }
+
+  .about-team .section-title {
+    font-size: 22px;
+  }
+
+  .donor-card {
+    padding: 12px;
+  }
+
+  .donor-image {
+    height: 80px;
+  }
+
+  .donor-name {
+    font-size: 15px;
+  }
+}
+
+/* ========== MOBILE VIEW ========== */
+@media screen and (max-width: 480px) {
+  .about-team {
+    padding: 20px 15px;
+  }
+
+  .about-team .section-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .donor-card {
+    padding: 10px;
+  }
+
+  .donor-image {
+    height: 100px;
+  }
+
+  .donor-name {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* about donate banner css  */
+.about-donate-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  padding: 60px 20px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.donate-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.donate-description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.donate-btn {
+  background-color: #f26522;
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+  background-color: #d95311;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .donate-title {
+    font-size: 18px;
+  }
+
+  .donate-description {
+    font-size: 14px;
+  }
+
+  .donate-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}

@@ -6,12 +6,12 @@ import Logo from "../../assets/ngo-logo.png";
 
 const Header = () => {
   return (
-    <header className="hotel-header">
-      <Navbar expand="lg" fixed="top" className="hotel-header-navbar">
+    <header className="hotel-header ">
+      <Navbar expand="lg" fixed="top" className="hotel-header-navbar ">
         <Container fluid className="hotel-header-section">
           <Navbar.Brand href="/" className="hotel-header-brand">
             <img src={Logo} alt="Logo" height="50" />
-          </Navbar.Brand>
+          </Navbar.Brand> 
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             className="hotel-header-toggler"

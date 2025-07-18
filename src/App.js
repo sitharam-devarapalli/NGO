@@ -8,6 +8,9 @@ import "aos/dist/aos.css";
 
 // Pages
 import HomePage from "./components/HomePage/HomePage";
+import AboutUs from "./components/AboutUs/AboutUs"
+import ContactUs from "./components/ContactUs/ContactUs"
+
 
 const App = () => {
   useEffect(() => {
@@ -19,10 +22,10 @@ const App = () => {
       <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/rooms" element={<Rooms />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} /> */}
+          <Route path="/about" element={<AboutUs />} />
+          {/* <Route path="/rooms" element={<Rooms />} /> */}
+          <Route path="/contact" element={<ContactUs />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       <Footer />
     </BrowserRouter>
