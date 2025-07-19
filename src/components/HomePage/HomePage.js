@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Carousel, Col, Row, Button } from "react-bootstrap";
 import "./HomePage.css";
 import CountUp from 'react-countup';
+import { useNavigate } from "react-router-dom";
 
 
 // slider images
@@ -55,24 +56,28 @@ const programs = [
         title: 'Enrichment',
         description:
             'We regularly organize community kitchens and food drives to ensure vulnerable groups receive healthy meals.',
+        id: 'enrichment'
     },
     {
         icon: <img src={iconEducation} alt="Education Icon" className="program-icon" />,
         title: 'Education',
         description:
             'From distributing study materials to funding school admissions, we help underprivileged children stay in school and dream big.',
+        id: 'education'
     },
     {
         icon: <img src={iconEmpowerment} alt="Empowerment Icon" className="program-icon" />,
         title: 'Empowerment',
         description:
             'We conduct sessions on budgeting, micro-loans, and small business guidance, enabling families to achieve long-term stability.',
+        id: 'empowerment'
     },
     {
         icon: <img src={iconImpact} alt="Impact Stories Icon" className="program-icon" />,
         title: 'Impact Stories',
         description:
             'Read how our programs helped Sita Devi start her own tailoring business or helped young Raj complete his schooling.',
+        id: 'impact-stories'
     },
 ];
 
@@ -103,6 +108,13 @@ const testimonials = [
 
 const HomePage = () => {
     const [index, setIndex] = useState(0);
+    const navigate = useNavigate();
+
+
+
+    const handleReadMore = (sectionId) => {
+        navigate(`/our-programs#${sectionId}`);
+    };
 
     const handleSelect = (selectedIndex) => setIndex(selectedIndex);
 
@@ -246,7 +258,7 @@ const HomePage = () => {
 
             {/* our program code  */}
             <div className="home-our-programs text-center">
-                <h3 className="section-heading">OUR PROGRAMS</h3> 
+                <h3 className="section-heading">OUR PROGRAMS</h3>
                 <div className="section-dividerers mb-4"></div>
                 <Container fluid>
                     <Row>
@@ -256,7 +268,12 @@ const HomePage = () => {
                                     {item.icon}
                                     <h5 className="program-title">{item.title}</h5>
                                     <p className="program-desc">{item.description}</p>
-                                    <Button className="read-more-btn">Read More</Button>
+                                    <Button
+                                        className="read-more-btn"
+                                        onClick={() => handleReadMore(item.id)}
+                                    >
+                                        Read More
+                                    </Button>
                                 </div>
                             </Col>
                         ))}

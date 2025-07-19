@@ -74,6 +74,84 @@
     background-color: #ffc107;
 }
 
+/* Tablet View: 768px to 991px */
+@media (max-width: 991px) {
+    .home-carousel-slide {
+        height: 80vh;
+    }
+
+    .home-carousel-text {
+        padding: 0 30px;
+        max-width: 500px;
+    }
+
+    .home-carousel-title {
+        font-size: 32px;
+    }
+
+    .home-carousel-sub {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .home-carousel-pagination {
+        bottom: 20px;
+    }
+
+    .home-carousel-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .home-carousel {
+        height: 70vh;
+    }
+}
+
+/* Mobile View: Up to 480px */
+@media (max-width: 480px) {
+    .home-carousel-slide {
+        height: 70vh;
+    }
+
+    .home-carousel-overlay {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .home-carousel-text {
+        padding: 0 20px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .home-carousel-title {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 10px;
+    }
+
+    .home-carousel-sub {
+        font-size: 12px;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+    }
+
+    .home-carousel-pagination {
+        bottom: 15px;
+    }
+
+    .home-carousel-dot {
+        width: 7px;
+        height: 7px;
+    }
+
+    .home-carousel {
+        height: 60vh;
+    }
+}
+
 
 /* our highlights section css  */
 .home-our-highlights {
@@ -204,38 +282,75 @@
     height: auto;
 }
 
-@media (max-width: 768px) {
+/* Tablet View (481px to 991px) */
+@media (min-width: 481px) and (max-width: 991px) {
     .home-who-we {
-        padding: 20px 20px;
+        padding: 25px 30px;
         text-align: center;
     }
 
-    .home-who-we .section-title {
-        font-size: 20px;
+    .section-title {
+        font-size: 24px;
     }
 
-    .home-who-we .section-divider {
-        margin-left: auto;
-        margin-right: auto;
+    .section-dividerss {
+        margin: 0 auto 10px;
     }
 
-    .home-who-we .description {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    .home-who-we .learn-more-btn {
-        width: 100%;
-        padding: 10px 0;
+    .description {
         font-size: 15px;
     }
 
-    .home-who-we .team-image {
-        width: 80%;
+    .learn-more-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .team-image {
+        width: 90%;
         margin: 0 auto 20px;
+    }
+
+    .section-dividers {
+        display: none;
     }
 }
 
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    .home-who-we {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .section-dividers {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .section-dividerss {
+        margin: 10px auto;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .learn-more-btn {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .team-image {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+}
 
 /* home our mission section  css  */
 .home-ourmission {
@@ -584,7 +699,7 @@
     /* Space for the label above */
 }
 
-.count-label { 
+.count-label {
     position: absolute;
     top: 75px;
     left: 50%;
@@ -611,6 +726,7 @@
 
     .count-label {
         font-size: 16px;
+        margin-top: 20px;
     }
 }
 

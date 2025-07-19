@@ -10,6 +10,9 @@ import "aos/dist/aos.css";
 import HomePage from "./components/HomePage/HomePage";
 import AboutUs from "./components/AboutUs/AboutUs"
 import ContactUs from "./components/ContactUs/ContactUs"
+import Donate from "./components/Donate/Donate"
+import Member from "./components/Members/Members"
+import OurPrograms from "./components/OurPrograms/OurPrograms"
 
 
 const App = () => {
@@ -25,7 +28,9 @@ const App = () => {
           <Route path="/about" element={<AboutUs />} />
           {/* <Route path="/rooms" element={<Rooms />} /> */}
           <Route path="/contact" element={<ContactUs />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/member" element={<Member />} />
+          <Route path="/our-programs" element={<OurPrograms />} />
         </Routes>
       <Footer />
     </BrowserRouter>

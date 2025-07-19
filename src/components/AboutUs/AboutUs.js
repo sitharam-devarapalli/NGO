@@ -4,7 +4,7 @@ import "./AboutUs.css";
 
 // images
 import bannerImage from "../../assets/about-us-banner.jpg";
-import story1 from "../../assets/about-us-img.png";
+import story1 from "../../assets/about-us-img.jpeg";
 
 // what we do images 
 import foodImage from "../../assets/what-we-do-1.avif";
@@ -38,7 +38,7 @@ const About = () => {
                     backgroundImage: `url(${bannerImage})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    height: "300px",
+                    height: "400px",
                 }}
             >
                 <Container>
